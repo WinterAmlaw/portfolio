@@ -1,0 +1,187 @@
+body {
+  background-image: linear-gradient(#0a192f, #0a192f);
+  text-align: justify;
+  color: #2A9D8F;
+  /* overflow: hidden; */
+
+}
+
+.navbar {
+  text-align: justify;
+  background-position: center;
+  position: fixed;
+  font-family: 'Ubuntu Mono', monospace;
+
+}
+.nav-item {
+  text-align: justify;
+  background-position: center;
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+.intro {
+  /* background-color: red; */
+  margin-left:2vw;
+  color:#64ffda;
+  font-family: 'Roboto Mono', monospace;
+  animation-duration: 3s;
+  animation-name: slidein;
+
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 2%;
+    width: 100%;
+  }
+}
+.name {
+  /* margin: 10vw; */
+  /* background-position: center; */
+  /* position: relative; */
+  /* background-color: black; */
+  height: 5vh;
+  width:100vw;
+  /* padding-top: 10vh; */
+  /* color: rgb(231, 111, 81); */
+  color: #ccd6f6;
+  text-align: center;
+  /* font-size: 50vh; */
+  margin-bottom: 10vw;
+  margin-top: 2vw;
+
+}
+
+.title {
+  /* display:flex; */
+  /* background-color: green; */
+  color: #8892b0;
+  padding-top:0;
+  /* display:block; */
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-family:sans-serif;
+  animation-duration: 5s;
+  animation-name: slideup;
+}
+@keyframes slideup {
+  from {
+    margin-top: 100%;
+    width: 50%;
+  }
+  75% {
+    margin-top: 100%;
+    width: 50%;
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+.cntr {
+  margin-top: 10em;
+  /* background-color: gray; */
+  display:block;
+  /* flex-direction:column; */
+  /* width: 100%; */
+  position: absolute;
+}
+
+.ltrbounce{
+  transition: opacity 700ms;
+  margin: -1.5vw;
+  /* background-color: black; */
+  padding: 1vw;
+  cursor:default;
+}
+.ltrbounce:hover{
+  /* height: 10vh;
+  width: 0vw; */
+  position:grid;
+  opacity: 0%;
+  cursor:default;
+
+  /* animation: letter 3s infinite;
+  animation-timing-function: linear; */
+
+}
+@keyframes letter {
+  from {
+    opacity: 100%;
+  }
+  50%{
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+
+#name{
+  /* display: block;
+  position: absolute; */
+  font-size: 10vw;
+  white-space: normal;
+  text-align: center;
+  animation-duration: 5s;
+  animation-name: appear;
+}
+@keyframes appear {
+  from {
+    color: #0a192f;
+  }
+  50% {
+    color: #0a192f;
+  }
+
+  to {
+    color: inherit;
+  }
+}
+
+#scroll {
+  background-color: #0a192f;
+  border: solid #64ffda;
+  border-width: 0 15px 15px 0;
+  display: inline-block;
+  padding: 3vw;
+  transform: rotate(45deg);
+  opacity: 20%;
+
+  position: absolute;
+  left:50vw;
+  top:80vh;
+
+  animation-duration: 1s;
+  animation-name: bounce;
+  animation-iteration-count:infinite;
+}
+
+@keyframes bounce {
+  from {
+    top:80vh;
+  }
+  50% {
+    top:79vh;
+  }
+
+  to {
+    top:80vh;
+  }
+}
+#scroll:hover{
+  opacity: 100%;
+  /* background-color: black; */
+
+}
+
+#test {
+  margin-top: 1000px;
+}
